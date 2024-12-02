@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /*.container {*/
+        /*    width: 70%;*/
+        /*    margin: 0 auto;*/
+        /*    padding: 20px;*/
+        /*}*/
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid; /* Enable grid layout */
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Spacing between grid items */
+            /*align-items: start; !* Ensure content aligns properly in uneven cards *!*/
+        }
+        .project {
+            max-width: 100%;
+            margin-bottom: 30px;
+            border: 1px solid #444;
+            padding: 55px;
+            border-radius: 2px;
+        }
+
+        .project img {
+            width: 100%; /* Ensure the image fills the width of its container */
+            height: 400px; /* Set a fixed height for consistent aspect ratio */
+            object-fit: cover; /* Crop the image to fit the defined dimensions */
+            border-radius: 5px; /* Keep the rounded corners */
+            margin-bottom: 5px;
+        }
+        .project h2 {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+        }
+        .project p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #777777;
+        }
+        .project-video {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="title">
+    <h2>Ryan Allyn Nader</h2>
+    <p>Here are some of the projects, research and documents that I have worked on, please use hyperlinks when provided for more information.</p>
+</div>
+
+<div class="container">
+    <div class="project">
+        <h2>Advancing NLP with Hierarchical Summarization at UC Berkeley BAIR Research</h2>
+        <img src="./images/R11.png" alt="Project 1 Image">
+        <p>I have recently embarked on research at UC Berkeley's Berkeley Artificial Intelligence Research (BAIR) lab, focusing on hierarchical summarization to enhance large language model (LLM) responses. My work includes contributing to the development and scaling of techniques outlined in the "Hierarchical Summarization: Scaling Up Multi-Document Summarization" paper. Currently, I am testing these methodologies with Herman Melville's Moby Dick to evaluate the model's ability to process and summarize complex, multi-chapter texts effectively. This involves refining algorithms for decomposing text into multi-level summaries, enabling more contextually aware and nuanced information retrieval. By implementing structured summarization strategies, I aim to address challenges in information overload and optimize the response quality of LLMs for complex queries. This research bridges cutting-edge NLP methodologies with practical applications in improving model interpretability and efficiency, contributing to the broader goals of AI accessibility and innovation.</p>
+    </div>
+    <div class="project">
+        <h2>Automated Stock Trading Program + OpenGL</h2>
+        <h2>Traders at UC Berkeley, Finance Research</h2>
+        <img src="./images/a1.png" alt="Project 1 Image">
+        <p>I created a fully automated stock trading program using Python that combines economic models and machine learning to make trading decisions. The results are then visualized with OpenGL, showing the trades and market activity in an animated format. For more information and simple example please refer <a href="https://www.dropbox.com/scl/fi/oufdm2ocduyovz6taekyh/HFT-Trading-Bot-StockWeb.paper?rlkey=ku3s8wwqqxk3gio3hft8pecow&dl=0">here</a>.</p>
+        <p>IMPORTANT: To view the full 4k video sample directly, please refer <a href="https://www.youtube.com/watch?v=WDuddDhupGc">here</a>.</p>
+        <p>A simple raytraced sample can be found <a href="https://www.youtube.com/watch?v=0btMCbtNZUU">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Custom Debug/Programmable PCB Band Pass Filter</h2>
+        <img src="./images/a2.png" alt="Project 2 Image">
+        <p>I extended the voice controlled car project from EECS16B and reimplemented the analog circuit on a custom 2 layer PCB with Altium and added digitally tunable resistors via a microcontroller for attenuation management and ADC modules so that the node voltages could be analyzed.</p>
+        <p>For more details the information can be found <a href="https://www.dropbox.com/scl/fi/r2idebekddyzp59zqrcsk/Hardware-Systems-Experiments.paper?rlkey=jgtvz38nvognte9iyurauhil0&dl=0">here</a>.</p>
+        <p>I also rendered the two layers as an animation in openGL <a href="https://www.youtube.com/watch?v=35KtqqbbyfY">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>CPU with Custom Datapath for FPGA and ASIC</h2>
+        <img src="./images/a3.png" alt="Project 2 Image">
+        <p>Created a custom RISCV-32i compliant datapath that was implemented using AMD Xilinx SDK for FPGA and Vivado with the PYNQ-Z1. In this project I was able to create and design a 5 stage CPU with CPI of 1 and had a UART interface with the board over micro hdmi. Also created this custom RISCV-32i compliant datapath that was implemented on ASIC with the help of Cadence Design Systems and Synopsys and added a custom cache module to reduce total cycles when accessing SSD.</p>
+        <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CPU_INFO/">here</a>.</p>
+        <p>The direct link to my cpu visualization is <a href="https://berkeleybear22ryan.github.io/CPU_RAN/">here</a>. Feel free to change the running program on my design on the bottom left.</p>
+        <p>Also as I designed it with a perfect CPI the CPU will never miss a branch prediction.</p>
+    </div>
+    <div class="project">
+        <h2>Cadence Direct Mapped Cache via SRAM Cell</h2>
+        <img src="./images/a4.png" alt="Project 2 Image">
+        <p>I designed and implemented a cache for a RISC-V processor as part of a VLSI design project. The cache serves to minimize latency by locally storing frequently accessed memory data, creating the illusion of a large, low-latency memory. My implementation followed the project specifications, which required a minimum 512-byte cache with 16-word (512-bit) cache lines, using SRAM macros for data and tag storage. As an EECS 151 student, I implemented a direct-mapped cache, which simplifies data storage and retrieval while providing efficient memory access for the processor. I designed a state machine to handle cache hits, misses, and memory transactions, supporting a write-back policy to manage dirty data efficiently. The cache interface adhered to the provided signals in Cache.v, enabling seamless integration with the processor and main memory. Additionally, I ensured that the cache could handle multiple cycles for memory transactions using the 128-bit memory interface. For testing, I ran benchmarks to compare performance with and without the cache. Using the bmark test suite, I observed the cycle counts for various benchmarks, noting a difference in performance between the cache-enabled and no-cache configurations. The final deliverables included the completed assembly tests, a detailed block diagram of the cache, an updated pipeline diagram reflecting the integration of the cache, and performance analysis based on benchmark results. This project provided valuable experience in designing and testing memory subsystems within an ASIC pipeline.</p>
+    </div>
+    <div class="project">
+        <h2>Applying Machine Learning to Econometric Research with Tamer Çetin</h2>
+        <img src="./images/econ1.png" alt="Project 2 Image">
+        <p>Under the guidance of Professor Tamer Çetin, I extended the analysis in the seminal paper by Angrist and Krueger, Does Compulsory School Attendance Affect Schooling and Earnings?, by integrating machine learning (ML) techniques into the instrumental variable (IV) model framework. The original study examined the causal effect of compulsory schooling laws on earnings using quarter-of-birth as an instrument. I enhanced this econometric approach by implementing ML models to predict and analyze the variation introduced by the instrument, exploring how non-linear patterns and interactions in the data influence the results. This included deploying tree-based methods like Random Forests and Gradient Boosting for variable importance and prediction accuracy while comparing these insights with traditional IV regression outcomes. The project highlights the potential for ML tools to complement classical econometric techniques, enabling richer policy insights and more robust causal inference in economic research.</p>
+    </div>
+    <div class="project">
+        <h2>Reinforcement Learning Self Driving Car in Unreal Engine</h2>
+        <h2>UC Berkeley ROAR Research</h2>
+        <img src="./images/a5.png" alt="Project 2 Image">
+        <p>As part of the Berkeley ROAR (Real-time Open AI Robotics) decal, I developed a Reinforcement Learning Self-Driving Car system simulated in Unreal Engine, integrating reinforcement learning, computer vision, and LiDAR-based object detection. This project focused on creating an autonomous driving pipeline capable of navigating complex environments with dynamic obstacles and road challenges. Using reinforcement learning algorithms such as Deep Deterministic Policy Gradient (DDPG) or Proximal Policy Optimization (PPO), the car optimized its driving policy by interacting with the simulated environment and receiving feedback through a reward-based system. The computer vision module employed convolutional neural networks (CNNs) to process visual data from in-game cameras, identifying lane markings, traffic signs, and other road features critical for navigation. Simultaneously, a LiDAR-based perception system mapped the surroundings in real-time, enabling precise object detection, collision avoidance, and localization. Unreal Engine provided a high-fidelity simulation environment, closely mimicking real-world driving conditions, which enhanced the training and testing of the system. By combining these technologies, the car demonstrated efficient navigation through various traffic scenarios, balancing speed, safety, and efficiency. This project provided a comprehensive understanding of integrating reinforcement learning with sensor data processing in simulated environments, offering valuable insights into autonomous vehicle development.</p>
+        <p>A video demo can be found <a href="https://www.youtube.com/watch?v=poMjaPgPZY0">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Comprehensive Technical Documentation of the RV32I RISC-V Instruction Set Architecture with Practical Examples and Pseudo-Instructions</h2>
+        <img src="./images/d1.png" alt="Project 2 Image">
+        <p>This document serves as a comprehensive resource for understanding and organizing the RV32I RISC-V instruction set architecture (ISA). It is the culmination of my research into the foundational aspects of RISC-V, emphasizing clarity and accessibility for students, developers, and enthusiasts alike. The documentation delves into the details of individual instructions, their formats, names, translations, code examples, and descriptions of their operations. It meticulously explains both base integer instructions and common extensions, such as the multiply and divide instructions from the RV32M extension. Additionally, it includes pseudo-instructions and directives to cover the broader RISC-V programming ecosystem. By illustrating each instruction with practical code snippets and clear explanations, the document bridges the gap between theoretical knowledge and practical implementation. This project reflects my commitment to not only mastering the RISC-V ISA but also contributing to the field by providing a well-structured, educational tool for anyone learning or working with RISC-V systems.</p>
+        <p>The document can be found <a href="https://berkeleybear22ryan.github.io/RV32_DOC_RAN/">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Designed and Implemented Operating System: PINTOS</h2>
+        <h2>pintOS User Programs</h2>
+        <img src="./images/c1.png" alt="Project 2 Image">
+        <p>In the User Programs project, our group implemented key system call functionalities for argument passing, process control, file operations, and floating-point operations. Argument passing was fully implemented before our design document was created, ensuring a seamless setup of arguments on the stack for user programs. For process control syscalls such as exec and wait, we revised the synchronization mechanism by introducing shared data structures (wait_data) containing semaphores for synchronization, ensuring precise control over process states. We redesigned the process creation flow by distinguishing between threads and processes, modifying structures like struct thread and struct process to align with this distinction. File operation syscalls were completed prior to the design document, and floating-point operations required adjustments to ensure stack alignment and proper FPU state handling, addressing nuanced issues in assembly and context switching. Reflection on this project highlighted the importance of clear task delegation and early communication within the group. Debugging was a collaborative effort, and although we faced challenges with floating-point operations and process control, we improved our synchronization and scheduling mechanisms significantly. Writing comprehensive test cases taught us to anticipate edge cases, which clarified our understanding of system call behavior and the Pintos kernel.</p>
+    </div>
+    <div class="project">
+        <h2>Designed and Implemented Operating System</h2>
+        <h2>pintOS Threads</h2>
+        <img src="./images/c2.png" alt="Project 2 Image">
+        <p>The Threads project extended Pintos to include advanced thread scheduling, synchronization, and user-level threading capabilities. For the Efficient Alarm Clock, we modified struct thread to include a timer_elem field, ensuring that threads could be managed separately in the sleeping list without interfering with synchronization structures. In the Strict Priority Scheduler, we introduced a lock priority comparator to resolve thread priorities when acquiring locks, using sched_elem in struct thread to maintain an efficient ready queue. The User Threads section involved implementing a pthread library and system calls for thread management, synchronization, and stack handling. Our design iterated significantly, emphasizing modularity and careful management of kernel and user pages. For instance, we optimized pthread_exit to avoid busy-waiting by joining all threads explicitly, improving performance and clarity. The design challenges revolved around memory alignment, argument sanitization, and ensuring compatibility across various syscall implementations. Key optimizations included consolidating redundant structures, such as replacing PCB-level thread lists with join-specific data, and improving argument passing mechanisms for stack consistency. Testing for Threads focused on edge cases, such as priority re-donation, and revealed the importance of implementing correct scheduling policies. Writing test cases reinforced our understanding of priority inversion scenarios and how scheduling policies could mitigate or exacerbate such issues.</p>
+    </div>
+    <div class="project">
+        <h2>Designed and Implemented Operating System</h2>
+        <h2>pintOS File System</h2>
+        <img src="./images/c3.png" alt="Project 2 Image">
+        <p>The File Systems project introduced a deeper level of complexity, combining tasks related to buffer caching, extensible files, and subdirectory management. For the Buffer Cache, we transitioned from a global filesystem lock to a granular locking mechanism, enabling better concurrency by allowing multiple threads to access different cache entries simultaneously. The cache structure was redesigned to include struct buffer_cache_entry and struct buffer_cache, facilitating efficient implementation of an LRU eviction policy using a global_tick counter and tick_lock. Cache initialization and cleanup routines were enhanced to ensure consistency and data integrity, particularly for flushing dirty entries during shutdown. In Extensible Files, our design revolved around managing inode resizing with direct, indirect, and double-indirect pointers. We optimized inode_resize with helper functions for granular functionality and synchronized free map updates across all file operations. The design required adjustments for persistent inode locks and handling edge cases for dynamic file resizing during concurrent operations. Rebasing our implementation to the skeleton code provided a more stable foundation for integrating subdirectory and caching features. For Subdirectories, we introduced an is_dir flag and parent pointer in struct inode_disk, streamlining directory-specific operations. The path_resolve function was modified to return both the directory and file inode, accommodating edge cases like symlinks and invalid paths. Synchronization mechanisms ensured safe concurrent access to shared directory structures, maintaining data integrity. This project was particularly challenging due to the need for integrating multiple components while handling concurrency. Testing emphasized cache efficiency, with tests like cache-hit-rate and cache-coalesce verifying the correctness of our buffer cache implementation under various workloads. Writing these tests taught us to consider system-wide implications, such as ensuring proper synchronization and minimizing contention for shared resources.</p>
+    </div>
+    <div class="project">
+        <h2>Reinforcement Learning Pacman Agent</h2>
+        <img src="./images/a7.png" alt="Project 2 Image">
+        <p>I implemented and explored fundamental concepts of reinforcement learning by developing agents capable of solving various tasks. I focused on value iteration and Q-learning algorithms to compute optimal policies for Markov Decision Processes (MDPs). I tested these implementations across diverse environments, including Gridworld, a simple environment for evaluating reinforcement learning methods; Crawler, a simulated robotic controller; and Pacman, a dynamic and complex game setting. Through this project, I gained hands-on experience in designing agents that learn from their environment, make decisions under uncertainty, and adapt their behavior to achieve specific objectives.</p>
+    </div>
+    <div class="project">
+        <h2>Custom Neural Radiance Field</h2>
+        <!--        <video src="./videos/depths.mp4" autoplay loop muted playsinline class="project-video"></video>-->
+        <img src="./images/a13.png" alt="Project 2 Image">
+        <p>I explored the concept of representing 2D and 3D spaces using neural fields, with a focus on reconstructing images and rendering scenes through advanced deep learning techniques. In Part 1, I implemented a neural field to fit a 2D image by creating a Multi-Layer Perceptron (MLP) with sinusoidal positional encoding. The network took 2D pixel coordinates as input and output 3D pixel colors. I optimized the model using mean squared error (MSE) loss and trained it with an Adam optimizer, experimenting with hyperparameter tuning to evaluate performance improvements. This part provided hands-on experience with training data sampling, loss functions, and reconstruction metrics like PSNR. In Part 2, I extended the work to a 3D NeRF by training the network to represent a 3D scene from multi-view images. This involved implementing ray tracing through camera transformations, sampling points along rays, and applying a volume rendering equation to reconstruct the scene. The network was adapted to predict densities and colors in 3D space, leveraging positional encoding and deeper network architectures. I visualized rays, samples, and rendered images during training and achieved high-quality results for rendering novel views of the Lego scene. Through this project, I gained an in-depth understanding of neural radiance fields and their applications in computer vision and graphics.</p>
+    </div>
+    <div class="project">
+        <h2>Custom Stable Diffusion Models</h2>
+        <!--        <video src="./videos/mnist.mp4" autoplay loop muted playsinline class="project-video"></video>-->
+        <img src="./images/a14.png" alt="Project 2 Image">
+        <p>I implemented and trained a diffusion model on the MNIST dataset as the foundation for a larger project. This involved building and training a single-step denoising UNet, a key component for solving image denoising tasks. The UNet architecture utilized downsampling and upsampling blocks with skip connections, enabling the model to reconstruct clean images from noisy inputs. I implemented these operations using PyTorch, designing custom layers such as convolutional, downsampling, and upsampling blocks. The denoising process optimized an L2 loss to train the UNet, where the model learned to map noisy images to their clean counterparts. To create training data, I generated noisy-clean image pairs using a controlled noising process and visualized the effects of different noise levels to understand the model's performance. This challenging project provided hands-on experience in building and training diffusion models, laying the groundwork for more advanced applications in generative modeling.</p>
+        <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CS180_Project5/">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Colorizing the Prokudin-Gorskii Photo Collection: A Computational Approach</h2>
+        <img src="./images/a8.png" alt="Project 2 Image">
+        <p>In this project, I developed an automated image processing pipeline to restore and align color photographs from Sergei Mikhailovich Prokudin-Gorskii's early 20th-century glass plate negatives. Each glass plate contained three separate exposures captured through red, green, and blue filters. My task involved dividing these plates into their respective color channels and aligning them to produce a cohesive RGB image. Starting with a naive brute-force alignment using metrics such as the L2 norm and normalized cross-correlation, I extended the approach to handle high-resolution images efficiently through an image pyramid. This hierarchical technique processed the images at multiple scales, progressively refining alignment estimates to optimize computational performance while maintaining accuracy. Beyond alignment, I explored advanced post-processing techniques to enhance image quality. This included automatic cropping to remove misaligned borders, contrast adjustments through intensity rescaling, and white balance corrections to neutralize color casts. Additionally, I implemented better color mapping strategies to approximate more realistic tones and experimented with edge-based alignment metrics for improved robustness. The results demonstrated clear improvements in visual fidelity, showcasing the potential for computational methods to revive historical photography. My implementation emphasized efficiency, producing aligned images within seconds for smaller resolutions and under a minute for large-scale scans.</p>
+        <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CS180_Project1/">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Exploring Image Processing Techniques: Filters, Frequencies, and Blending</h2>
+        <img src="./images/a9.png" alt="Project 2 Image">
+        <p>In this project, I implemented a variety of foundational and advanced image processing techniques to explore the interplay of filters, frequency domains, and blending. The journey began with finite difference operators to compute gradients and edge detection. By extending this to the Derivative of Gaussian (DoG) filter, I reduced noise while preserving meaningful edges, showcasing the power of combining spatial and frequency domain techniques. For frequency manipulation, I utilized unsharp masking to sharpen images, isolating high-frequency details and amplifying them for enhanced clarity. This method was applied to blurry images and their sharpened counterparts to evaluate the preservation of detail. Further, I explored hybrid images inspired by the SIGGRAPH 2006 paper, blending high-frequency details of one image with the low-frequency features of another to create compelling visuals that shift perception with distance. The project culminated in multiresolution blending, implementing Gaussian and Laplacian stacks to seamlessly combine images. Using both vertical and irregular masks, I created smooth transitions between images, such as blending an apple with an orange and experimenting with creative compositions. An extension of this technique was used to transfer a tattoo from one subject to another, specifically moving a tattoo from a woman’s back onto a man without a tattoo. This demonstrated the versatility of the techniques in real-world applications like photo editing and creative visualization. The insights gained from this project underscored the transformative potential of combining spatial and frequency domain methods, offering a deeper understanding of image processing concepts and their practical applications.</p>
+        <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CS180_Project2/">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Face Morphing: Blending Shapes and Features Through Image Transformation</h2>
+        <img src="./images/a10.png" alt="Project 2 Image">
+        <p>In this project, I explored the intricate process of face morphing, which combines simultaneous warping of image shapes and cross-dissolving of image colors. This technique was applied to create smooth transitions between two faces, compute the average face of a population, and generate personalized caricatures. The journey began with defining correspondences between two facial images by identifying key points for features like eyes, nose, and mouth. These points were triangulated to create a mesh that controlled the shape warping. To simplify this process and increase efficiency, I extended the project by leveraging a machine learning model to automatically detect facial landmarks, eliminating the need for manual point selection. The next step was computing a "midway face" by averaging the key points of two images and warping both faces into this average shape. Using affine transformations for each triangle in the triangulation, I achieved a blend that showcased the combined features of both faces. The morphing sequence was then implemented by interpolating shape warping and cross-dissolving across a series of frames, producing a smooth transition from one face to another. Beyond individual morphs, I used annotated datasets to calculate the mean face of a population. This involved warping each face in the dataset into the average geometry, displaying examples, and deriving the average face. Additionally, I transformed my own face into the average population geometry and vice versa, providing a comparative analysis of facial structures. Caricature generation was another highlight of this project. By extrapolating beyond the population mean, I exaggerated distinct facial features, creating caricatures that emphasized unique characteristics. Extending this, I explored bells and whistles like altering age and gender through morphing, experimenting with morphing music videos, and utilizing PCA to transform faces within a reduced-dimensional space for innovative results. This project demonstrated the power of combining geometry, image processing, and machine learning to manipulate and analyze facial images. The automation of keypoint selection through machine learning significantly enhanced efficiency and provided a foundation for further applications in facial recognition, animation, and digital art.</p>
+        <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CS180_Project3/">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Image Warping and Mosaicing with Advanced Video Stabilization and Stitching</h2>
+        <img src="./images/a11.png" alt="Project 2 Image">
+        <p></p>
+        <p>In this project, I explored image warping and mosaicing, progressing from static image stitching to advanced video mosaics. Starting with manual correspondence-based homography recovery, I computed transformations to warp images into alignment and created seamless mosaics using weighted averaging and Laplacian pyramids for smooth blending. I validated my pipeline with image rectification tasks, transforming skewed regions into geometrically accurate perspectives. To automate the process, I implemented feature-based autostitching using Harris corner detection, Adaptive Non-Maximal Suppression, normalized feature descriptors, and Lowe's ratio test for matching, with robust homography estimation via RANSAC. This enabled automatic alignment and stitching of images into cohesive mosaics, achieving results comparable to manual methods. Extending the approach, I tackled video mosaicing, processing four overlapping 4K videos with frame-to-frame homographies and stabilization algorithms to address motion and jitter, producing a stabilized high-resolution panoramic video mosaic. This project bridged foundational image processing with dynamic, large-scale applications, showcasing the scalability and robustness of these techniques.</p>
+        <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CS180_Project4/">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Visualizing Gradient Ascent in 3D Vector Spaces with Raytracing</h2>
+        <img src="./images/a12.png" alt="Project 2 Image">
+        <p>In this project, I explored the mathematical intricacies of gradient ascent by visualizing optimization trajectories in a 3D vector space using raytracing techniques. Gradient ascent, a cornerstone of optimization, iteratively adjusts parameters to maximize a given function by moving in the direction of the gradient. I rendered a dynamic representation of the optimization process, illustrating the gradient vector fields, the curvature of the objective function's surface, and the paths taken by hypothetical agents as they ascend to local or global maxima. Using raytracing, I highlighted the interplay between the function's Hessian (capturing local curvature) and the gradient's magnitude and direction, providing an intuitive yet mathematically rigorous perspective on convergence behaviors in high-dimensional spaces. The visuals emphasized the role of step size and initialization in optimization, making abstract mathematical concepts accessible through vivid, raytraced renderings that combined aesthetics with analytical depth.</p>
+        <p>A simple raytraced sample can be found <a href="https://youtu.be/hIkutfC022U">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>AI-Powered Flappy Bird: A Playable Game and Perfect AI Player</h2>
+        <img src="./images/fl1.png" alt="Project 2 Image">
+        <p>This project involved developing a Flappy Bird-inspired game where players could either enjoy the classic experience or witness a flawless AI mastering the game. Using reinforcement learning, I trained an AI agent to achieve perfect gameplay by optimizing its actions through trial-and-error within a simulated environment. The AI employed a Q-learning-based algorithm to balance risk and reward, adapting to changing obstacles with pixel-perfect precision. For visualization, I integrated real-time updates of the AI's decision-making process, showcasing its evolving strategy as it learns. The project combined game design with artificial intelligence, offering both an interactive experience for users and a demonstration of AI's capability to achieve optimal performance in dynamic systems.</p>
+        <p>A simple video demo can be found <a href="https://www.youtube.com/watch?v=KIv1J1AE3rk">here</a>.</p>
+    </div>
+
+</div>
+<div class="container">
+
+</div>
+
+<div class="container">
+
+</div>
+
+
+</body>
+</html>
