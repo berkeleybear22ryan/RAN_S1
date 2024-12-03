@@ -71,14 +71,15 @@
 </div>
 
 <div class="container">
+
     <div class="project">
         <h2>Advancing NLP with Hierarchical Summarization at UC Berkeley BAIR Research</h2>
         <img src="./images/R11.png" alt="Project 1 Image">
         <p>I have recently embarked on research at UC Berkeley's Berkeley Artificial Intelligence Research (BAIR) lab, focusing on hierarchical summarization to enhance large language model (LLM) responses. My work includes contributing to the development and scaling of techniques outlined in the "Hierarchical Summarization: Scaling Up Multi-Document Summarization" paper. Currently, I am testing these methodologies with Herman Melville's Moby Dick to evaluate the model's ability to process and summarize complex, multi-chapter texts effectively. This involves refining algorithms for decomposing text into multi-level summaries, enabling more contextually aware and nuanced information retrieval. By implementing structured summarization strategies, I aim to address challenges in information overload and optimize the response quality of LLMs for complex queries. This research bridges cutting-edge NLP methodologies with practical applications in improving model interpretability and efficiency, contributing to the broader goals of AI accessibility and innovation.</p>
     </div>
+
     <div class="project">
         <h2>Automated Stock Trading Program + OpenGL</h2>
-        <h2>Traders at UC Berkeley, Finance Research</h2>
         <img src="./images/a1.png" alt="Project 1 Image">
         <p>I created a fully automated stock trading program using Python that combines economic models and machine learning to make trading decisions. The results are then visualized with OpenGL, showing the trades and market activity in an animated format. For more information and simple example please refer <a href="https://www.dropbox.com/scl/fi/oufdm2ocduyovz6taekyh/HFT-Trading-Bot-StockWeb.paper?rlkey=ku3s8wwqqxk3gio3hft8pecow&dl=0">here</a>.</p>
         <p>IMPORTANT: To view the full 4k video sample directly, please refer <a href="https://www.youtube.com/watch?v=WDuddDhupGc">here</a>.</p>
@@ -97,24 +98,74 @@
         <p>Created a custom RISCV-32i compliant datapath that was implemented using AMD Xilinx SDK for FPGA and Vivado with the PYNQ-Z1. In this project I was able to create and design a 5 stage CPU with CPI of 1 and had a UART interface with the board over micro hdmi. Also created this custom RISCV-32i compliant datapath that was implemented on ASIC with the help of Cadence Design Systems and Synopsys and added a custom cache module to reduce total cycles when accessing SSD.</p>
         <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CPU_INFO/">here</a>.</p>
         <p>The direct link to my cpu visualization is <a href="https://berkeleybear22ryan.github.io/CPU_RAN/">here</a>. Feel free to change the running program on my design on the bottom left.</p>
-        <p>Also as I designed it with a perfect CPI the CPU will never miss a branch prediction.</p>
+        <p>As I designed it with a perfect CPI the CPU will never miss a branch prediction.</p>
     </div>
     <div class="project">
         <h2>Cadence Direct Mapped Cache via SRAM Cell</h2>
         <img src="./images/a4.png" alt="Project 2 Image">
         <p>I designed and implemented a cache for a RISC-V processor as part of a VLSI design project. The cache serves to minimize latency by locally storing frequently accessed memory data, creating the illusion of a large, low-latency memory. My implementation followed the project specifications, which required a minimum 512-byte cache with 16-word (512-bit) cache lines, using SRAM macros for data and tag storage. As an EECS 151 student, I implemented a direct-mapped cache, which simplifies data storage and retrieval while providing efficient memory access for the processor. I designed a state machine to handle cache hits, misses, and memory transactions, supporting a write-back policy to manage dirty data efficiently. The cache interface adhered to the provided signals in Cache.v, enabling seamless integration with the processor and main memory. Additionally, I ensured that the cache could handle multiple cycles for memory transactions using the 128-bit memory interface. For testing, I ran benchmarks to compare performance with and without the cache. Using the bmark test suite, I observed the cycle counts for various benchmarks, noting a difference in performance between the cache-enabled and no-cache configurations. The final deliverables included the completed assembly tests, a detailed block diagram of the cache, an updated pipeline diagram reflecting the integration of the cache, and performance analysis based on benchmark results. This project provided valuable experience in designing and testing memory subsystems within an ASIC pipeline.</p>
     </div>
+
+
+
+
+
+
+
+
+
     <div class="project">
-        <h2>Applying Machine Learning to Econometric Research with Tamer Çetin</h2>
-        <img src="./images/econ1.png" alt="Project 2 Image">
-        <p>Under the guidance of Professor Tamer Çetin, I extended the analysis in the seminal paper by Angrist and Krueger, Does Compulsory School Attendance Affect Schooling and Earnings?, by integrating machine learning (ML) techniques into the instrumental variable (IV) model framework. The original study examined the causal effect of compulsory schooling laws on earnings using quarter-of-birth as an instrument. I enhanced this econometric approach by implementing ML models to predict and analyze the variation introduced by the instrument, exploring how non-linear patterns and interactions in the data influence the results. This included deploying tree-based methods like Random Forests and Gradient Boosting for variable importance and prediction accuracy while comparing these insights with traditional IV regression outcomes. The project highlights the potential for ML tools to complement classical econometric techniques, enabling richer policy insights and more robust causal inference in economic research.</p>
+        <h2>Independent Researcher | Compiler Development for RISC-V Visualization</h2>
+        <img src="./images/44444444.png" alt="Project 1 Image">
+        <p>Designed and implemented a custom compiler to convert RISC-V binary machine code back into assembly language as part of an independent project. This tool was developed to enable detailed visualization of CPU pipeline execution, providing insights into instruction flow and data processing. Leveraged the compiler to decode binary instructions and map them accurately to corresponding assembly-level representations, ensuring compatibility with standard RISC-V ISA formats.</p>
+        <p>Utilized this reverse-engineered assembly output to create a dynamic visualization of the CPU pipeline, highlighting instruction execution stages, data dependencies, and control flow. The project facilitated a deeper understanding of pipeline behavior and performance optimization, while demonstrating practical skills in low-level systems programming, RISC-V architecture, and computer graphics integration.</p>
+    </div>
+
+
+    <div class="project">
+        <h2>Top Kaggle Performance CS189</h2>
+        <img src="./images/sp.png" alt="Project 2 Image">
+        <p>During this course, I devoted considerable effort to the assignments and was able to place highly on the Kaggle leaderboards in several competitive tasks.</p>
+        <p>MNIST Classification with SVMs (HW1): Tied for 5th place with an accuracy of 0.991.</p>
+        <p>MNIST Classification with Gaussian Discriminant Analysis (HW3): Placed 2nd with an accuracy of 0.972.</p>
+        <p>Spam Classification with Gaussian Discriminant Analysis (HW3): Ranked 11th with an accuracy of 0.958.</p>
+        <p>Wine Classification with Logistic Regression (HW4): Tied for 1st place with an accuracy of 0.997.</p>
+        <p></p>
+        <p>For more details the class, information can be found <a href="https://people.eecs.berkeley.edu/~jrs/189/">here</a>.</p>
+    </div>
+    <div class="project">
+        <h2>Student Researcher | Deep Learning for Visual Data | Directed Group Study</h2>
+        <h2>Machine Learning @ Berkeley</h2>
+        <img src="./images/x9.png" alt="Project 1 Image">
+        <p>Participated in an advanced group study, Deep Learning for Visual Data, offered by the EECS department, with a focus on computer vision systems. Acquired expertise in neural network architectures such as convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transformers, tackling tasks like image classification, object detection, semantic segmentation, and generative modeling. Leveraged state-of-the-art techniques including self-supervised learning, transfer learning, attention mechanisms, and multimodal fusion, while implementing models with frameworks like TensorFlow and PyTorch.</p>
+        <p>Engaged actively with Machine Learning @ Berkeley (ML@B), contributing to the organization’s initiatives in advancing opportunities and education in machine learning. Participated in collaborative efforts across research, industry partnerships, and educational outreach, fostering innovation and making machine learning accessible to broader audiences.</p>
+        <p>The organization homepage can be found <a href="https://ml.studentorg.berkeley.edu/">here</a> for more information.</p>
+        <p>The course homepage can be found <a href="https://ml-berkeley.notion.site/CS-198-126-Deep-Learning-for-Visual-Data-a57e2aca54c046edb7014439f81ba1d5">here</a> for more information.</p>
     </div>
     <div class="project">
         <h2>Reinforcement Learning Self Driving Car in Unreal Engine</h2>
         <h2>UC Berkeley ROAR Research</h2>
-        <img src="./images/a5.png" alt="Project 2 Image">
+        <img src="./images/x1.png" alt="Project 2 Image">
         <p>As part of the Berkeley ROAR (Real-time Open AI Robotics) decal, I developed a Reinforcement Learning Self-Driving Car system simulated in Unreal Engine, integrating reinforcement learning, computer vision, and LiDAR-based object detection. This project focused on creating an autonomous driving pipeline capable of navigating complex environments with dynamic obstacles and road challenges. Using reinforcement learning algorithms such as Deep Deterministic Policy Gradient (DDPG) or Proximal Policy Optimization (PPO), the car optimized its driving policy by interacting with the simulated environment and receiving feedback through a reward-based system. The computer vision module employed convolutional neural networks (CNNs) to process visual data from in-game cameras, identifying lane markings, traffic signs, and other road features critical for navigation. Simultaneously, a LiDAR-based perception system mapped the surroundings in real-time, enabling precise object detection, collision avoidance, and localization. Unreal Engine provided a high-fidelity simulation environment, closely mimicking real-world driving conditions, which enhanced the training and testing of the system. By combining these technologies, the car demonstrated efficient navigation through various traffic scenarios, balancing speed, safety, and efficiency. This project provided a comprehensive understanding of integrating reinforcement learning with sensor data processing in simulated environments, offering valuable insights into autonomous vehicle development.</p>
         <p>A video demo can be found <a href="https://www.youtube.com/watch?v=poMjaPgPZY0">here</a>.</p>
+        <p>The official UC Berkeley ROAR website can be found <a href="https://roar.berkeley.edu/">here</a>.</p>
+    </div>
+
+    <div class="project">
+        <h2>Student Researcher | Fundamentals of Blockchain Technology | Directed Group Study</h2>
+        <h2>Blockchain at Berkeley</h2>
+        <img src="./images/x8.png" alt="Project 1 Image">
+        <p>Participated in an advanced group study exploring the technological and economic foundations of blockchain and cryptocurrency through the Blockchain Fundamentals DeCal offered by the EECS department. Gained a comprehensive understanding of blockchain systems, including proof-of-work (PoW), proof-of-stake (PoS), Byzantine fault tolerance (BFT), elliptic curve cryptography (ECC), decentralized applications (DApps), smart contract execution, Merkle trees, hash functions, and distributed ledger technology (DLT). Explored key economic principles such as tokenomics, digital currency valuation, supply and demand dynamics in blockchain ecosystems, incentive structures, market liquidity, and the role of cryptocurrencies in modern financial systems. Developed critical skills to evaluate diverse narratives surrounding blockchain technology and its intersection with economics, forming an informed perspective on its potential to reshape financial markets, monetary policy, and global trade systems.</p>
+        <p>The course homepage can be found <a href="https://blockchain.studentorg.berkeley.edu/education">here</a> for more information.</p>
+    </div>
+
+    <div class="project">
+        <h2>Corporate Finance Statement Analysis</h2>
+        <h2>CASE STUDY: RIVIAN</h2>
+        <img src="./images/x10.png" alt="Project 1 Image">
+        <p>Completed an in-depth study of corporate finance sponsored by UC Berkeley's Haas School of Business. Acquired a robust understanding of business valuation methods, including Discounted Cash Flow (DCF), valuation by comparable firms, financial metrics, and real options analysis. Developed expertise in analyzing earnings quality, cost of capital, terminal values, and sensitivity analysis. Applied financial modeling techniques using tools like MS Excel to solve real-world corporate finance problems.</p>
+        <p>Conducted a detailed financial analysis of Rivian Automotive, focusing on its borrowing patterns and the sustainability of its capital structure. Investigated key challenges, including high levels of debt financing, cash burn rate, and potential impacts on long-term growth. Synthesized insights from financial reports and recent news, identifying corporate finance risks related to Rivian's ability to balance aggressive investment in innovation with financial stability. Formulated recommendations for managing borrowing levels and improving financial health to enhance shareholder value.</p>
+        <p>For more information on Rivian please refer <a href="https://rivian.com/">here</a> and <a href="https://finance.yahoo.com/quote/RIVN/?guccounter=1">here</a>.</p>
     </div>
     <div class="project">
         <h2>Comprehensive Technical Documentation of the RV32I RISC-V Instruction Set Architecture with Practical Examples and Pseudo-Instructions</h2>
@@ -122,23 +173,74 @@
         <p>This document serves as a comprehensive resource for understanding and organizing the RV32I RISC-V instruction set architecture (ISA). It is the culmination of my research into the foundational aspects of RISC-V, emphasizing clarity and accessibility for students, developers, and enthusiasts alike. The documentation delves into the details of individual instructions, their formats, names, translations, code examples, and descriptions of their operations. It meticulously explains both base integer instructions and common extensions, such as the multiply and divide instructions from the RV32M extension. Additionally, it includes pseudo-instructions and directives to cover the broader RISC-V programming ecosystem. By illustrating each instruction with practical code snippets and clear explanations, the document bridges the gap between theoretical knowledge and practical implementation. This project reflects my commitment to not only mastering the RISC-V ISA but also contributing to the field by providing a well-structured, educational tool for anyone learning or working with RISC-V systems.</p>
         <p>The document can be found <a href="https://berkeleybear22ryan.github.io/RV32_DOC_RAN/">here</a>.</p>
     </div>
+
+    <div class="project">
+        <h2>IEEE + UC BERKELEY IEEE Member</h2>
+        <img src="./images/x5.png" alt="Project 1 Image">
+        <p>Active member of the Institute of Electrical and Electronics Engineers (IEEE) and UC Berkeley IEEE, contributing to the advancement of cutting-edge technologies and global standards. Proficient in C programming language with a focus on developing efficient, standards-compliant solutions. Engaged in fostering innovation, collaboration, and technical excellence through participation in IEEE activities and initiatives.</p>
+        <p>The homepage for IEEE can be found <a href="https://www.ieee.org/">here</a> for more information.</p>
+        <p>The homepage for UC Berkeley IEEE can be found <a href="https://ieee.berkeley.edu/">here</a> for more information.</p>
+    </div>
+
+    <div class="project">
+        <h2>UC BERKELEY IEEE HOPE | Directed Group Study</h2>
+        <img src="./images/PPYY.png" alt="Project 1 Image">
+        <p>Gained hands-on experience with PCB design and manufacturing through the HOPE (Hands-On Practical Electronics) program, focusing on practical applications of electronics in real-world scenarios. Enhanced skills in PCB layout, component selection, and circuit debugging while working on projects that emphasized design for manufacturability and assembly. Engaged with IEEE HOPE DeCal instructors to seek expert advice on PCB manufacturing and assembly processes, which proved instrumental in designing and producing my first custom PCB. This experience deepened my understanding of electronic systems and provided a solid foundation for future projects in hardware development.</p>
+        <p>The homepage can be found <a href="https://ieee.berkeley.edu/hope/">here</a> for more information.</p>
+    </div>
+
+    <div class="project">
+        <h2>ANSI and ISO Member | C Programming</h2>
+        <img src="./images/x6.png" alt="Project 1 Image">
+        <p>Active member of the American National Standards Institute (ANSI) and the International Organization for Standardization (ISO), contributing to the development and adoption of global standards. Proficient in C programming language with a focus on creating efficient, standards-compliant code. Dedicated to fostering interoperability, quality, and innovation through adherence to internationally recognized guidelines and practices.</p>
+        <p>The homepage can be found <a href="https://www.ansi.org/">here</a> for more information.</p>
+    </div>
+    <div class="project">
+        <h2>Student Researcher and Linux System Administrator | Directed Group Study</h2>
+        <img src="./images/x7.png" alt="Project 1 Image">
+        <p>Gained hands-on experience in administering Linux-based server environments modeled after the EECS Instructional Servers (hivexx.cs.b.e) and the Open Computing Facility (tsunami.ocf.b.e). Developed comprehensive knowledge of GNU/Linux systems, including the interaction of key components such as init, filesystems, services, and daemons. Acquired skills in basic networking, system security maintenance, and system administration essentials, with practical exposure to tasks and challenges faced by system administrators in industry.</p>
+        <p>The course homepage can be found <a href="https://decal.ocf.berkeley.edu/">here</a> for more information.</p>
+        <p>The OCF homepage can be found <a href="https://www.ocf.berkeley.edu/">here</a> for more information.</p>
+    </div>
+
+    <div class="project">
+        <h2>Independent Researcher | The Chinese Economy and Development</h2>
+        <img src="./images/x11.png" alt="Project 1 Image">
+        <p>Conducted independent research on the evolution and success of the Chinese economy, exploring its historical trajectory and the factors contributing to the "China Model." Analyzed how geographic, political, and institutional reforms shaped China’s economic transformation, using frameworks rooted in economic history and growth theory. Examined the role of central planning, the reform process, and structural changes, focusing on sectors such as agriculture, state-owned enterprises, and foreign trade.</p>
+        <p>Studied the mechanisms that enabled China to achieve rapid industrialization and sustained economic growth, including its approach to population management, labor markets, income distribution, and financial sector development. Explored the integration of China into the global economy, assessing its trade policies and foreign investment strategies. Synthesized data from contemporary sources and historical records to understand the unique combination of market-driven incentives and state control that underpins the Chinese economic model. This research provided insights into both the successes and challenges faced by China in adapting its economy to the demands of the 21st century.</p>
+        <p>Image generated symbolizing Deng Xiaoping’s metaphor, “We had to fill the river with stones before we could cross it,” representing China's transition from a centrally planned economy to a market-based economy. This gradual, pragmatic approach allowed China to experiment with reforms, adapt to challenges, and ensure stability during its economic transformation.</p>
+    </div>
+
+
+
+
+
+    <div class="project">
+        <h2>Applying Machine Learning to Econometric Research with Tamer Çetin</h2>
+        <img src="./images/econ1.png" alt="Project 2 Image">
+        <p>Under the guidance of Professor Tamer Çetin, I extended the analysis in the seminal paper by Angrist and Krueger, Does Compulsory School Attendance Affect Schooling and Earnings?, by integrating machine learning (ML) techniques into the instrumental variable (IV) model framework. The original study examined the causal effect of compulsory schooling laws on earnings using quarter-of-birth as an instrument. I enhanced this econometric approach by implementing ML models to predict and analyze the variation introduced by the instrument, exploring how non-linear patterns and interactions in the data influence the results. This included deploying tree-based methods like Random Forests and Gradient Boosting for variable importance and prediction accuracy while comparing these insights with traditional IV regression outcomes. The project highlights the potential for ML tools to complement classical econometric techniques, enabling richer policy insights and more robust causal inference in economic research.</p>
+    </div>
+
     <div class="project">
         <h2>Designed and Implemented Operating System: PINTOS</h2>
         <h2>pintOS User Programs</h2>
         <img src="./images/c1.png" alt="Project 2 Image">
         <p>In the User Programs project, our group implemented key system call functionalities for argument passing, process control, file operations, and floating-point operations. Argument passing was fully implemented before our design document was created, ensuring a seamless setup of arguments on the stack for user programs. For process control syscalls such as exec and wait, we revised the synchronization mechanism by introducing shared data structures (wait_data) containing semaphores for synchronization, ensuring precise control over process states. We redesigned the process creation flow by distinguishing between threads and processes, modifying structures like struct thread and struct process to align with this distinction. File operation syscalls were completed prior to the design document, and floating-point operations required adjustments to ensure stack alignment and proper FPU state handling, addressing nuanced issues in assembly and context switching. Reflection on this project highlighted the importance of clear task delegation and early communication within the group. Debugging was a collaborative effort, and although we faced challenges with floating-point operations and process control, we improved our synchronization and scheduling mechanisms significantly. Writing comprehensive test cases taught us to anticipate edge cases, which clarified our understanding of system call behavior and the Pintos kernel.</p>
+        <p>The document can be found <a href="./images/OS1.pdf">here</a> for more information.</p>
     </div>
     <div class="project">
         <h2>Designed and Implemented Operating System</h2>
         <h2>pintOS Threads</h2>
         <img src="./images/c2.png" alt="Project 2 Image">
         <p>The Threads project extended Pintos to include advanced thread scheduling, synchronization, and user-level threading capabilities. For the Efficient Alarm Clock, we modified struct thread to include a timer_elem field, ensuring that threads could be managed separately in the sleeping list without interfering with synchronization structures. In the Strict Priority Scheduler, we introduced a lock priority comparator to resolve thread priorities when acquiring locks, using sched_elem in struct thread to maintain an efficient ready queue. The User Threads section involved implementing a pthread library and system calls for thread management, synchronization, and stack handling. Our design iterated significantly, emphasizing modularity and careful management of kernel and user pages. For instance, we optimized pthread_exit to avoid busy-waiting by joining all threads explicitly, improving performance and clarity. The design challenges revolved around memory alignment, argument sanitization, and ensuring compatibility across various syscall implementations. Key optimizations included consolidating redundant structures, such as replacing PCB-level thread lists with join-specific data, and improving argument passing mechanisms for stack consistency. Testing for Threads focused on edge cases, such as priority re-donation, and revealed the importance of implementing correct scheduling policies. Writing test cases reinforced our understanding of priority inversion scenarios and how scheduling policies could mitigate or exacerbate such issues.</p>
+        <p>The document can be found <a href="./images/OS2.pdf">here</a> for more information.</p>
     </div>
     <div class="project">
         <h2>Designed and Implemented Operating System</h2>
         <h2>pintOS File System</h2>
         <img src="./images/c3.png" alt="Project 2 Image">
         <p>The File Systems project introduced a deeper level of complexity, combining tasks related to buffer caching, extensible files, and subdirectory management. For the Buffer Cache, we transitioned from a global filesystem lock to a granular locking mechanism, enabling better concurrency by allowing multiple threads to access different cache entries simultaneously. The cache structure was redesigned to include struct buffer_cache_entry and struct buffer_cache, facilitating efficient implementation of an LRU eviction policy using a global_tick counter and tick_lock. Cache initialization and cleanup routines were enhanced to ensure consistency and data integrity, particularly for flushing dirty entries during shutdown. In Extensible Files, our design revolved around managing inode resizing with direct, indirect, and double-indirect pointers. We optimized inode_resize with helper functions for granular functionality and synchronized free map updates across all file operations. The design required adjustments for persistent inode locks and handling edge cases for dynamic file resizing during concurrent operations. Rebasing our implementation to the skeleton code provided a more stable foundation for integrating subdirectory and caching features. For Subdirectories, we introduced an is_dir flag and parent pointer in struct inode_disk, streamlining directory-specific operations. The path_resolve function was modified to return both the directory and file inode, accommodating edge cases like symlinks and invalid paths. Synchronization mechanisms ensured safe concurrent access to shared directory structures, maintaining data integrity. This project was particularly challenging due to the need for integrating multiple components while handling concurrency. Testing emphasized cache efficiency, with tests like cache-hit-rate and cache-coalesce verifying the correctness of our buffer cache implementation under various workloads. Writing these tests taught us to consider system-wide implications, such as ensuring proper synchronization and minimizing contention for shared resources.</p>
+        <p>The document can be found <a href="./images/OS3.pdf">here</a> for more information.</p>
     </div>
     <div class="project">
         <h2>Reinforcement Learning Pacman Agent</h2>
@@ -189,6 +291,28 @@
         <p>In this project, I explored the mathematical intricacies of gradient ascent by visualizing optimization trajectories in a 3D vector space using raytracing techniques. Gradient ascent, a cornerstone of optimization, iteratively adjusts parameters to maximize a given function by moving in the direction of the gradient. I rendered a dynamic representation of the optimization process, illustrating the gradient vector fields, the curvature of the objective function's surface, and the paths taken by hypothetical agents as they ascend to local or global maxima. Using raytracing, I highlighted the interplay between the function's Hessian (capturing local curvature) and the gradient's magnitude and direction, providing an intuitive yet mathematically rigorous perspective on convergence behaviors in high-dimensional spaces. The visuals emphasized the role of step size and initialization in optimization, making abstract mathematical concepts accessible through vivid, raytraced renderings that combined aesthetics with analytical depth.</p>
         <p>A simple raytraced sample can be found <a href="https://youtu.be/hIkutfC022U">here</a>.</p>
     </div>
+
+    <div class="project">
+        <h2>Traders at UC Berkeley, EECS Finance Research</h2>
+        <img src="./images/x2.png" alt="Project 1 Image">
+        <p>Traders at Berkeley is a student-driven organization dedicated to advancing knowledge and opportunities in quantitative finance. The group hosts flagship events like the annual Berkeley Trading Competition and Berkeley Trading Invitational, attracting top students and industry professionals. It offers educational initiatives such as the Introduction to Quantitative Finance DeCal, which equips students with practical trading and research skills. Traders at Berkeley fosters professional growth by organizing networking events and job fairs, connecting students with leading quantitative finance firms. Having attended several events hosted by Traders at Berkeley, I gained exposure to the world of quantitative finance, participated in discussions with industry professionals, and deepened my understanding of applied quantitative concepts and market dynamics. Through its competitions, courses, and community-building efforts, the organization supports students in achieving their academic and career aspirations in the quantitative finance space.</p>
+        <p>The homepage can be found <a href="https://traders.studentorg.berkeley.edu/index.html">here</a> for more information.</p>
+    </div>
+
+    <div class="project">
+        <h2>Berkeley Investment Group, Economics Investment Research</h2>
+        <img src="./images/x3.png" alt="Project 1 Image">
+        <p>Berkeley Investment Group (BIG) is UC Berkeley's oldest and premier undergraduate investment fund, established in 1997. BIG provides students with a unique opportunity to learn the skills necessary to become value investors through hands-on portfolio management, educational programs, and exclusive networking opportunities. As a member of the group, I attended several events and engaged with industry professionals, gaining insights into investment strategies and the rigorous financial analysis required for successful value investing. The organization focuses on generating risk-adjusted returns by identifying fundamentally undervalued companies, emphasizing stocks with asymmetric returns—high potential upside and low potential downside. BIG’s approach combines rigorous fundamental analysis and financial modeling, with over $130,000 in assets under management. Through its intern program and mentorship opportunities, BIG prepares students for success in the competitive finance world, with a strong track record of placements in top firms such as Citadel, Point72, and Temasek.</p>
+        <p>The homepage can be found <a href="https://www.berkeleyinvestment.group/">here</a> for more information.</p>
+    </div>
+    <div class="project">
+        <h2>Five Stage Pipeline Data-path Hazards with Control Logic Design Document</h2>
+        <img src="./images/x12.png" alt="Project 1 Image">
+        <p>Designed and implemented a detailed five-stage pipeline datapath to simulate and analyze the behavior of a RISC-V processor, addressing common data hazards and control flow challenges. The project incorporated forwarding logic and stalling mechanisms (using NOPs) to resolve hazards, ensuring correct execution of instructions without compromising performance. A comprehensive control unit was developed to manage pipeline operations and mitigate issues such as data dependencies, branch prediction, and load-use delays.</p>
+        <p>The pipeline was visualized with a detailed diagram showcasing instruction fetch, decode, execute, memory access, and write-back stages, along with the control and data flow connections. This project demonstrated a deep understanding of CPU architecture, control logic, and optimization techniques for hazard resolution, providing insights into real-world processor design challenges and solutions.</p>
+        <p>The document can be found <a href="./images/cpu_5_stage.pdf">here</a> for more information. It is large so make sure to zoom.</p>
+    </div>
+
     <div class="project">
         <h2>AI-Powered Flappy Bird: A Playable Game and Perfect AI Player</h2>
         <img src="./images/fl1.png" alt="Project 2 Image">
