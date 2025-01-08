@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <style>
+        /* Default styles (light mode) */
         body {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             font-family: "Times New Roman", sans-serif;
             margin: 0;
             padding: 0;
@@ -17,19 +18,13 @@
             margin: 0 auto;
             padding: 20px;
         }
-        /*.container {*/
-        /*    width: 70%;*/
-        /*    margin: 0 auto;*/
-        /*    padding: 20px;*/
-        /*}*/
         .container {
             width: 90%;
             margin: 0 auto;
             padding: 20px;
-            display: grid; /* Enable grid layout */
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive columns */
-            gap: 20px; /* Spacing between grid items */
-            /*align-items: start; !* Ensure content aligns properly in uneven cards *!*/
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
         }
         .project {
             max-width: 100%;
@@ -38,12 +33,11 @@
             padding: 55px;
             border-radius: 2px;
         }
-
         .project img {
-            width: 100%; /* Ensure the image fills the width of its container */
-            height: 400px; /* Set a fixed height for consistent aspect ratio */
-            object-fit: cover; /* Crop the image to fit the defined dimensions */
-            border-radius: 5px; /* Keep the rounded corners */
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
             margin-bottom: 5px;
         }
         .project h2 {
@@ -53,7 +47,7 @@
         .project p {
             margin: 0;
             font-size: 0.9em;
-            color: #777777;
+            color: black;
         }
         .project-video {
             width: 100%;
@@ -62,10 +56,69 @@
             border-radius: 10px;
             margin-bottom: 10px;
         }
+        /* Dark mode styles */
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        body.dark .project p {
+            color: white;
+        }
+        /* Toggle switch styles */
+        .toggle-container {
+            display: flex;
+            justify-content: left;
+            padding: 10px 20px;
+        }
+        .toggle-switch {
+            cursor: pointer;
+            background-color: #aaa;
+            border-radius: 15px;
+            width: 40px;
+            height: 20px;
+            position: relative;
+        }
+        .toggle-switch::before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background-color: white;
+            border-radius: 50%;
+            top: 1px;
+            left: 1px;
+            transition: 0.3s;
+        }
+        .toggle-switch.active {
+            background-color: #444;
+        }
+        .toggle-switch.active::before {
+            left: 21px;
+        }
+        #profileImage {
+            width: 10%;
+            min-width: 150px;
+            max-width: 150px;
+            border-radius: 10px;
+            border: 1px solid #777;
+            display: block;
+            object-fit: cover;
+        }
     </style>
 </head>
-<body>
+
+<body class="light">
+
+
+
+
 <div class="title">
+
+    <div class="toggle-container">
+        <div class="toggle-switch" id="themeToggle"></div>
+    </div>
+    <p>please click button to toggle light and dark mode for accessibility needs</p>
+<!--    <img src="./images/me.jpeg" alt="Project 1 Image" id="profileImage">-->
     <h2>Ryan Allyn Nader</h2>
     <p>Here are some of the projects, research and documents that I have worked on, please use hyperlinks when provided for more information.</p>
 </div>
@@ -146,7 +199,7 @@
         <h2>Reinforcement Learning Self Driving Car in Unreal Engine</h2>
         <h2>UC Berkeley ROAR Research</h2>
         <img src="./images/x1.png" alt="Project 2 Image">
-        <p>As part of the Berkeley ROAR (Real-time Open AI Robotics) decal, I developed a Reinforcement Learning Self-Driving Car system simulated in Unreal Engine, integrating reinforcement learning, computer vision, and LiDAR-based object detection. This project focused on creating an autonomous driving pipeline capable of navigating complex environments with dynamic obstacles and road challenges. Using reinforcement learning algorithms such as Deep Deterministic Policy Gradient (DDPG) or Proximal Policy Optimization (PPO), the car optimized its driving policy by interacting with the simulated environment and receiving feedback through a reward-based system. The computer vision module employed convolutional neural networks (CNNs) to process visual data from in-game cameras, identifying lane markings, traffic signs, and other road features critical for navigation. Simultaneously, a LiDAR-based perception system mapped the surroundings in real-time, enabling precise object detection, collision avoidance, and localization. Unreal Engine provided a high-fidelity simulation environment, closely mimicking real-world driving conditions, which enhanced the training and testing of the system. By combining these technologies, the car demonstrated efficient navigation through various traffic scenarios, balancing speed, safety, and efficiency. This project provided a comprehensive understanding of integrating reinforcement learning with sensor data processing in simulated environments, offering valuable insights into autonomous vehicle development.</p>
+        <p>As part of the Berkeley ROAR (Robot Open Autonomous Racing) decal, I developed a Reinforcement Learning Self-Driving Car system simulated in Unreal Engine, integrating reinforcement learning, computer vision, and LiDAR-based object detection. This project focused on creating an autonomous driving pipeline capable of navigating complex environments with dynamic obstacles and road challenges. Using reinforcement learning algorithms such as Deep Deterministic Policy Gradient (DDPG) or Proximal Policy Optimization (PPO), the car optimized its driving policy by interacting with the simulated environment and receiving feedback through a reward-based system. The computer vision module employed convolutional neural networks (CNNs) to process visual data from in-game cameras, identifying lane markings, traffic signs, and other road features critical for navigation. Simultaneously, a LiDAR-based perception system mapped the surroundings in real-time, enabling precise object detection, collision avoidance, and localization. Unreal Engine provided a high-fidelity simulation environment, closely mimicking real-world driving conditions, which enhanced the training and testing of the system. By combining these technologies, the car demonstrated efficient navigation through various traffic scenarios, balancing speed, safety, and efficiency. This project provided a comprehensive understanding of integrating reinforcement learning with sensor data processing in simulated environments, offering valuable insights into autonomous vehicle development.</p>
         <p>A video demo can be found <a href="https://www.youtube.com/watch?v=poMjaPgPZY0">here</a>.</p>
         <p>The official UC Berkeley ROAR website can be found <a href="https://roar.berkeley.edu/">here</a>.</p>
     </div>
@@ -259,6 +312,7 @@
         <!--        <video src="./videos/depths.mp4" autoplay loop muted playsinline class="project-video"></video>-->
         <img src="./images/a13.png" alt="Project 2 Image">
         <p>I explored the concept of representing 2D and 3D spaces using neural fields, with a focus on reconstructing images and rendering scenes through advanced deep learning techniques. In Part 1, I implemented a neural field to fit a 2D image by creating a Multi-Layer Perceptron (MLP) with sinusoidal positional encoding. The network took 2D pixel coordinates as input and output 3D pixel colors. I optimized the model using mean squared error (MSE) loss and trained it with an Adam optimizer, experimenting with hyperparameter tuning to evaluate performance improvements. This part provided hands-on experience with training data sampling, loss functions, and reconstruction metrics like PSNR. In Part 2, I extended the work to a 3D NeRF by training the network to represent a 3D scene from multi-view images. This involved implementing ray tracing through camera transformations, sampling points along rays, and applying a volume rendering equation to reconstruct the scene. The network was adapted to predict densities and colors in 3D space, leveraging positional encoding and deeper network architectures. I visualized rays, samples, and rendered images during training and achieved high-quality results for rendering novel views of the Lego scene. Through this project, I gained an in-depth understanding of neural radiance fields and their applications in computer vision and graphics.</p>
+        <p>For more details the information can be found <a href="https://berkeleybear22ryan.github.io/CS180_ProjectFP/">here</a>.</p>
     </div>
     <div class="project">
         <h2>Custom Stable Diffusion Models</h2>
@@ -330,6 +384,12 @@
 
 </div>
 
-
+<script>
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        themeToggle.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
